@@ -1,0 +1,240 @@
+* { 
+    margin: 0; 
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+/* header and navbar */
+
+nav {
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    background-color: antiquewhite;
+    top: 0; 
+    left: 0;
+    margin-bottom: 1vh;
+    z-index: 999;
+    height: 8vh;
+    width: 100vw;
+    justify-content: space-between;
+}
+
+ul{
+   justify-content: space-between; 
+   margin-right: 3vw;
+}
+
+li{
+    display: inline;
+    padding-right: 5px;
+}
+
+a {
+    color: rgb(67, 67, 68);
+    text-decoration: none;
+}
+
+#logo { 
+    line-height: 8vh;
+    margin-left: 2vw;
+}
+
+#nav-links { 
+    line-height: 8vh;
+}
+
+/* main body */
+
+main{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10vh;
+    height: 90vh;
+}
+
+#welcome {
+    background-color: rgba(77, 77, 77, 0.63);
+    background-image: url('images/florian-olivo-4hbJ-eymZ1o-unsplash.jpg');
+    background-size: cover;
+    background-blend-mode: darken;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    min-height: 70vh;
+}
+
+#welcome-title {
+    color: silver;
+    margin-bottom: 2vh;
+    font-size: 2em;
+}
+
+#welcome-text  {
+    color: silver;
+    text-align: center;
+    padding-left: 4vw;
+    font-size: 1.2em;
+}
+
+#project-section { 
+    background-color: rgb(1, 106, 243);
+    margin-top: 5px;
+
+    display: grid;
+    column-gap: 1em;
+    row-gap: 1em;
+    justify-content: space-around;
+    min-height: 50vh;
+    z-index: 5;
+    padding: 1em;
+}
+
+.project { 
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    min-height: 10vh;
+    min-width: 30vw;
+    border-radius: 10px;
+    box-shadow: rgb(39, 39, 39) 4px 4px 4px;
+    max-width: 30vw;
+    text-align: center;
+    justify-content: center;
+
+}
+.project > a {
+    font-size: 1.2em;
+    font-weight: 600;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+
+}   
+
+#pro1{ 
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+#pro2{ 
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+#pro3{ 
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+#pro4{ 
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+#decoration { 
+    background-color:  rgb(1, 106, 243);
+    min-height: 23vh;
+    transform: skewY(-7deg);
+    margin-top: -14vh;
+}
+
+/* About Section */
+
+#about-me{
+    min-height: 50vh;
+    margin-top: 8vh;
+    display: flex;
+    flex-direction: row;
+    margin: 10% 1%;
+    padding: 0px;
+
+
+}
+#about-text{
+    max-width: 45vw;
+    margin: 15px;
+
+}
+
+#about-img { 
+    max-width: 35vw;
+    margin-left: 45px;
+    object-fit: cover;
+    border-radius: 3px;
+    
+    box-shadow: rgb(39, 39, 39) 4px 4px 4px;
+
+}
+
+#contact { 
+    background-color: rgb(1, 106, 243);
+    display: flex;
+    flex-direction: row;
+    min-height: 10vh;
+    width: 100%;
+    justify-content: space-between;
+
+
+}
+
+#contact-info{
+    color:silver;
+    margin-left: 2vw;
+    margin-top: 3%;
+
+}
+
+#social-links { 
+    display: flex;
+    justify-content: space-between;
+    margin-right: 2vw;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+
+.fa-facebook {
+    background: #5885c9;
+    color: white;
+    padding: 15px;
+    margin-right: 10px;
+    font-size: 1em;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+.fa-linkedin {
+    background: #563ec0;
+    color: white;
+    padding: 15px;
+    margin-right:10px;
+    font-size: 1em;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 10%;
+}
+
+.fa-instagram {
+    background: #942ec4;
+    color: white;
+    padding: 15px;
+    font-size: 2em;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 10%;
+}
+
