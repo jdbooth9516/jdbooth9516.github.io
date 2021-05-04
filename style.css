@@ -117,6 +117,8 @@ main {
     font-size: 1.2em;
 }
 
+/* PROJECT SECTION */
+
 #project-section { 
     background: linear-gradient(160deg, lightblue, rgb(1, 106, 243));
     margin-top: 5px;
@@ -136,12 +138,12 @@ main {
         justify-content: center;
         align-items: center;
     }
-
     .project-disc { 
         display: none;
     }
-
 }
+
+/* PROJECT CARDS */
 
 .project { 
     background-color: aliceblue;
@@ -182,6 +184,8 @@ main {
     }
 }
 
+/* GRID FORMAT */
+
 #pro1{ 
     grid-column-start: 1;
     grid-column-end: 2;
@@ -211,15 +215,15 @@ main {
 }
 
 #decoration { 
-    background: linear-gradient(160deg, rgb(71, 149, 252) ,rgb(21, 104, 212));
+    background: linear-gradient(150deg, rgb(84, 158, 255) ,rgb(16, 103, 218));
     min-height: 30vh;
     transform: skewY(-7deg);
     margin-top: -14vh;
 }
-/* need media to change the height */
 
 
-/* About Section */
+
+/* ABOUT SECTION */
 
 #about-me{
     min-height: 50vh;
@@ -271,6 +275,8 @@ main {
         display: none;
     }
 }
+
+/* CONTACT SECTION */
 
 #contact { 
     background-color: rgb(1, 106, 243);
