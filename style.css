@@ -4,8 +4,11 @@
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-
+html { 
+    scroll-behavior: smooth;
+}
 /* header and navbar */
+
 
 nav {
     display: flex;
@@ -71,32 +74,17 @@ a {
 
 /* main body */
 
-body {
-    overflow: hidden;
-}
-
-@media (max-width: 800px) {
-    body { 
-        overflow: auto;
-        overflow-x: hidden;
-    }
-}
-
-main{
+main {
     display: flex;
     flex-direction: column;
     margin-top: 10vh;
-    height: auto;
-    overflow-y: scroll;
-    overflow-x: hidden;
-    scroll-behavior: smooth;
 }
+
 
 @media (max-width: 800px) {
     main { 
         margin: 2vh 2vw 10vh 2vw;
         width: 95vw; 
-        overflow: initial;
     }
 }
 
@@ -128,7 +116,6 @@ main{
 #project-section { 
     background-color: rgb(1, 106, 243);
     margin-top: 5px;
-
     display: grid;
     column-gap: 1em;
     row-gap: 1em;
@@ -216,10 +203,12 @@ main{
 
 #decoration { 
     background-color:  rgb(1, 106, 243);
-    min-height: 23vh;
+    min-height: 30vh;
     transform: skewY(-7deg);
     margin-top: -14vh;
 }
+/* need media to change the height */
+
 
 /* About Section */
 
