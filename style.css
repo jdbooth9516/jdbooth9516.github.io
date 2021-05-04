@@ -36,17 +36,23 @@ nav {
 }
 
 
-
 ul{
-    margin-top: 5px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
     padding-top: 5px;
-   justify-content: space-between; 
-   margin-right: 3vw;
+    justify-content: space-between; 
+    margin-right: 3vw;
 }
 
 li{
-    display: inline;
-    padding-right: 5px;
+    list-style-type: none;
+    padding-right: 10px;
+}
+
+li:hover { 
+    transform: scale(1.1);
+
 }
 
 a {
@@ -54,6 +60,7 @@ a {
     color: rgb(67, 67, 68);
     text-decoration: none;
 }
+
 
 @media (max-width: 800px) {
     ul { 
@@ -68,9 +75,6 @@ a {
     margin-left: 2vw;
 }
 
-#nav-links { 
-    line-height: 8vh;
-}
 
 /* main body */
 
@@ -114,7 +118,7 @@ main {
 }
 
 #project-section { 
-    background-color: rgb(1, 106, 243);
+    background: linear-gradient(160deg, lightblue, rgb(1, 106, 243));
     margin-top: 5px;
     display: grid;
     column-gap: 1em;
@@ -152,6 +156,11 @@ main {
     justify-content: center;
 
 }
+
+.project:hover {
+    transform: scale(1.05);
+}
+
 @media (max-width: 800px) { 
     .project { 
         min-height: 10vh;
@@ -202,7 +211,7 @@ main {
 }
 
 #decoration { 
-    background-color:  rgb(1, 106, 243);
+    background: linear-gradient(160deg, rgb(71, 149, 252) ,rgb(21, 104, 212));
     min-height: 30vh;
     transform: skewY(-7deg);
     margin-top: -14vh;
@@ -254,9 +263,7 @@ main {
     margin-left: 45px;
     object-fit: cover;
     border-radius: 3px;
-    
     box-shadow: rgb(39, 39, 39) 6px 6px 6px;
-
 }
 
 @media (max-width: 800px) {
@@ -272,6 +279,7 @@ main {
     min-height: 10vh;
     width: 100%;
     justify-content: space-between;
+    text-align: center;
 
 
 }
@@ -286,8 +294,8 @@ main {
 
 #contact-info{
     color:rgb(0, 0, 0);
-    margin-left: 10px;
-    margin-top: 3%;
+    margin-left: 30px;
+    margin-top: 2.1rem;
 
 }
 
@@ -297,6 +305,7 @@ main {
     margin-right: 2vw;
     margin: 20px;
 }
+
 
 @media (max-width: 800px) { 
     #social-links {
@@ -317,6 +326,10 @@ main {
     border-radius: 50%;
 }
 
+.fa-facebook:hover  {
+    transform: scale(1.07);
+}
+
 .fa-linkedin {
     background: #563ec0;
     color: white;
@@ -329,6 +342,10 @@ main {
     border-radius: 10%;
 }
 
+.fa-linkedin:hover  {
+    transform: scale(1.07);
+}
+
 .fa-instagram {
     background: #942ec4;
     color: white;
@@ -338,5 +355,9 @@ main {
     text-align: center;
     text-decoration: none;
     border-radius: 10%;
+}
+
+.fa-instagram:hover  {
+    transform: scale(1.07);
 }
 
