@@ -11,17 +11,32 @@ nav {
     display: flex;
     flex-direction: row;
     position: fixed;
-    background-color: antiquewhite;
+    background-color: aliceblue;
     top: 0; 
     left: 0;
     margin-bottom: 1vh;
     z-index: 999;
-    height: 8vh;
+    height: 10vh;
     width: 100vw;
     justify-content: space-between;
+
 }
 
+@media (max-width: 800px) {
+    nav {
+    height: 30vh;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    } 
+}
+
+
+
 ul{
+    margin-top: 5px;
+    padding-top: 5px;
    justify-content: space-between; 
    margin-right: 3vw;
 }
@@ -32,8 +47,17 @@ li{
 }
 
 a {
+    font-size: 1.2em;
     color: rgb(67, 67, 68);
     text-decoration: none;
+}
+
+@media (max-width: 800px) {
+    ul { 
+        padding: 0;
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
 }
 
 #logo { 
@@ -47,11 +71,33 @@ a {
 
 /* main body */
 
+body {
+    overflow: hidden;
+}
+
+@media (max-width: 800px) {
+    body { 
+        overflow: auto;
+        overflow-x: hidden;
+    }
+}
+
 main{
     display: flex;
     flex-direction: column;
     margin-top: 10vh;
-    height: 90vh;
+    height: auto;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+@media (max-width: 800px) {
+    main { 
+        margin: 2vh 2vw 10vh 2vw;
+        width: 95vw; 
+        overflow: initial;
+    }
 }
 
 #welcome {
@@ -92,6 +138,20 @@ main{
     padding: 1em;
 }
 
+@media (max-width: 800px) { 
+    #project-section { 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .project-disc { 
+        display: none;
+    }
+
+}
+
 .project { 
     background-color: aliceblue;
     display: flex;
@@ -105,6 +165,14 @@ main{
     justify-content: center;
 
 }
+@media (max-width: 800px) { 
+    .project { 
+        min-height: 10vh;
+        min-width: 40vw;
+        max-width: 70vw;
+    }
+}
+
 .project > a {
     font-size: 1.2em;
     font-weight: 600;
@@ -112,6 +180,11 @@ main{
     margin-bottom: 15px;
 
 }   
+@media (min-width: 800px) { 
+    .project > a { 
+        margin: 10px 0 10px 0;
+    }
+}
 
 #pro1{ 
     grid-column-start: 1;
@@ -157,13 +230,34 @@ main{
     flex-direction: row;
     margin: 10% 1%;
     padding: 0px;
+}
 
-
+@media (max-width: 800px) {
+    #about-me { 
+        flex-direction: column;
+    }
 }
 #about-text{
+    color:rgb(73, 73, 73);
     max-width: 45vw;
     margin: 15px;
 
+}
+
+@media (max-width: 800px) {
+    #about-text { 
+        max-width: 90vw;
+        }
+}
+
+#about-text > h3 { 
+    font-size: 1.5em;
+    margin-bottom: 1em;
+}
+
+#about-para { 
+    font-size: 1.2em;
+    line-height: 1.4em;
 }
 
 #about-img { 
@@ -172,8 +266,14 @@ main{
     object-fit: cover;
     border-radius: 3px;
     
-    box-shadow: rgb(39, 39, 39) 4px 4px 4px;
+    box-shadow: rgb(39, 39, 39) 6px 6px 6px;
 
+}
+
+@media (max-width: 800px) {
+    #about-img { 
+        display: none;
+    }
 }
 
 #contact { 
@@ -186,10 +286,18 @@ main{
 
 
 }
+@media (max-width: 800px) {
+    #contact {
+        margin-top: 2vh;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+}
 
 #contact-info{
-    color:silver;
-    margin-left: 2vw;
+    color:rgb(0, 0, 0);
+    margin-left: 10px;
     margin-top: 3%;
 
 }
@@ -198,8 +306,13 @@ main{
     display: flex;
     justify-content: space-between;
     margin-right: 2vw;
-    margin-top: 2%;
-    margin-bottom: 2%;
+    margin: 20px;
+}
+
+@media (max-width: 800px) { 
+    #social-links {
+        justify-content: center;
+    }
 }
 
 
