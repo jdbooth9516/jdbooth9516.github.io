@@ -221,6 +221,12 @@ main {
     margin-top: -14vh;
 }
 
+@media (max-width: 800px) {
+    #decoration { 
+        display: none;
+    }
+}
+
 
 
 /* ABOUT SECTION */
