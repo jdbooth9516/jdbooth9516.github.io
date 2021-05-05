@@ -65,8 +65,7 @@ a {
 @media (max-width: 800px) {
     ul { 
         padding: 0;
-        margin-top: 0;
-        margin-bottom: 10px;
+        margin: 0 5vw 0 5vw;
     }
 }
 
@@ -105,13 +104,13 @@ main {
 }
 
 #welcome-title {
-    color: silver;
+    color: aliceblue;
     margin-bottom: 2vh;
     font-size: 2em;
 }
 
 #welcome-text  {
-    color: silver;
+    color: aliceblue;
     text-align: center;
     padding-left: 4vw;
     font-size: 1.2em;
@@ -122,7 +121,8 @@ main {
 #project-section { 
     background: linear-gradient(160deg, lightblue, rgb(1, 106, 243));
     margin-top: 5px;
-    display: grid;
+    display: flex;
+    flex-direction: row;
     column-gap: 1em;
     row-gap: 1em;
     justify-content: space-around;
@@ -134,50 +134,88 @@ main {
 @media (max-width: 800px) { 
     #project-section { 
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         justify-content: center;
         align-items: center;
     }
-    .project-disc { 
-        display: none;
+
+}
+
+/* ARROWS */
+
+.fa-chevron-left {
+    padding-right: 15px;
+    color: aliceblue;
+    margin-top: 22vh;
+    height: 10vh;
+}
+
+@media (max-width: 800px) {
+    .fa-chevron-left { 
+        margin-top: 8vh;
+    }
+}
+
+.fa-chevron-right { 
+    padding-left: 15px;
+    color: aliceblue;
+    margin-top: 22vh;
+    height: 10vh;
+}
+
+@media (max-width: 800px) {
+    .fa-chevron-right { 
+        margin-top: 7vh;
     }
 }
 
 /* PROJECT CARDS */
 
+
 .project { 
     background-color: aliceblue;
     display: flex;
     flex-direction: column;
-    min-height: 10vh;
+    min-height: 25vh;
     min-width: 30vw;
     border-radius: 10px;
     box-shadow: rgb(39, 39, 39) 4px 4px 4px;
-    max-width: 30vw;
+    max-width: 50vw;
     text-align: center;
     justify-content: center;
-    transition: transform 0.5s;
-    transition-timing-function: ease-in;
-
+    -webkit-transition: opacity 0.5s ease-in;
+    -moz-transition: opacity 0.5s ease-in;
+    -ms-transition: opacity 0.5s ease-in;
+    -o-transition: opacity 0.5s ease-in;
+    transition: opacity 0.5s ease-in;
 }
 
-.project:hover {
-    transform: scale(1.05);
+#pro1.fade {
+    opacity: 0;
+}
+
+#pro1.unfade {
+    opacity: 1;
 }
 
 @media (max-width: 800px) { 
     .project { 
-        min-height: 10vh;
+        min-height: 30vh;
         min-width: 40vw;
         max-width: 70vw;
     }
 }
 
 .project > a {
-    font-size: 1.2em;
+    font-size: 2em;
     font-weight: 600;
-    padding-bottom: 5px;
-    margin-bottom: 15px;
+    padding: 3vh 2vw;
+}   
+
+.project > p {
+    font-size: 1.2em;
+    font-weight: 400;
+    padding: 5vh 2vw;
 
 }   
 @media (min-width: 800px) { 
@@ -186,35 +224,6 @@ main {
     }
 }
 
-/* GRID FORMAT */
-
-#pro1{ 
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 1;
-    grid-row-end: 2;
-}
-
-#pro2{ 
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 2;
-}
-
-#pro3{ 
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 2;
-    grid-row-end: 3;
-}
-
-#pro4{ 
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 2;
-    grid-row-end: 3;
-}
 
 #decoration { 
     background: linear-gradient(150deg, rgb(84, 158, 255) ,rgb(16, 103, 218));
@@ -287,7 +296,7 @@ main {
 /* CONTACT SECTION */
 
 #contact { 
-    background-color: rgb(1, 106, 243);
+    background: linear-gradient(160deg, lightblue, rgb(1, 106, 243));
     display: flex;
     flex-direction: row;
     min-height: 10vh;
@@ -309,15 +318,20 @@ main {
 #contact-info{
     color:rgb(0, 0, 0);
     margin-left: 30px;
-    margin-top: 2.1rem;
+    margin-top: 1.5rem;
 
+}
+
+.contact-btn-section {
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
 
 #social-links { 
     display: flex;
     justify-content: space-between;
-    margin-right: 2vw;
-    margin: 20px;
+    margin: 30px;
+    max-height: 5vh;
 }
 
 
@@ -327,14 +341,43 @@ main {
     }
 }
 
+.contact-form{
+    display: none;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 5px;
+}
+
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 5px;
+    text-align: start;
+}
+
+label { 
+    font-size: 1.3em;
+}
+
+.input-area {
+    line-height: 1.5em;
+}
+
+.submit-btn {
+    margin: 10px 0 10px 0;
+}
+
 
 .fa-facebook {
-    background: #5885c9;
+    background: #045bdf;
     color: white;
     padding: 15px;
-    margin-right: 10px;
+    margin-right: 20px;
     font-size: 1em;
     width: 20px;
+    height: auto;
     text-align: center;
     text-decoration: none;
     border-radius: 50%;
@@ -348,7 +391,7 @@ main {
     background: #563ec0;
     color: white;
     padding: 15px;
-    margin-right:10px;
+    margin-right:20px;
     font-size: 1em;
     width: 20px;
     text-align: center;

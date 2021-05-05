@@ -32,25 +32,39 @@
             </p>
         </div>
         <div id="project-section">
+            <div class="fa fa-chevron-left fa-3x" id="left-arrow"><a class="prev"></a></div>
             <div class="project" id="pro1">
-                <a href="https://github.com/jdbooth9516/Efficiency_Timer" target="_blank">Efficiency Timer</a>
-                <p class="project-disc">Allows user to enter a time that to focus on working. Then when the time is up alerts them to take a break that is porportional to time time that they were working. </p>
+                <a href="https://github.com/jdbooth9516/Efficiency_Timer" target="_blank"  id="project-title">Efficiency Timer</a>
+                <p class="project-disc" id="project-text">Allows user to enter a time that to focus on working. Then when the time is up alerts them to take a break that is porportional to time time that they were working. </p>
             </div>
-            <div class="project" id="pro2">future project here</div>
-            <div class="project" id="pro3">future project here</div>
-            <div class="project" id="pro4">future project here</div>
+            <div class="fa fa-chevron-right fa-3x" id='right-arrow'><a class="next"></a></div>
         </div>
         <div id="decoration"></div>
         <div id="about-me">
             <div id="about-text">
                 <h3>Nice to meet you,</h3>
-                <p id="about-para"> &emsp; I am Jeremiah a U.S Army veteran now turned software developer. A passion that encompasses two of my favorite things, technology and building thing. I started this journey teaching myself Python as time progressed. I got more into web development and that required I learn HTML, CSS, and Javascript. I then went to school to sharpen my skills and solidify my learning. As such I bring to the table hard work and dedication as well as the constant desire and passion for learn new skills and technologies.</p> </div>
-            <img  id="about-img" src="images/12193723_10200799604989997_658857533072314377_n.jpg" alt="image of Jeremiah"> <!-- make into an image tag-->
+                <p id="about-para"> &emsp; I am Jeremiah a U.S Army veteran now turned software developer. A passion that encompasses two of my favorite things, technology and building things. I started this journey teaching myself Python and as time progressed, I got more into web development and that required I learn HTML, CSS, and Javascript. I then went to school to sharpen my skills and solidify my learning. As such I bring to the table hard work and dedication as well as the constant desire and passion for learning new skills and technologies.</p> </div>
+            <img  id="about-img" src="images/12193723_10200799604989997_658857533072314377_n.jpg" alt="image of Jeremiah"> 
         </div>
         <div id="contact">
             <div id="contact-info">
-            <p> Email: jeremiah.boohphotg@gmail.com</p> 
+            <p> Email: jboothwebdev@gmail.com</p> 
+            <div class="contact-btn-section">
+                <button id="contact-btn" type="button">Contact Me</button>
             </div>
+        </div>
+
+        <div class="contact-form" id="contact-form">
+            <form action="#" class="form">
+                <label for="name">Name:</label>
+                <input  class="input-area" type="text" id="name" name="name">
+                <label for="email">Email:</label>
+                <input class="input-area" type="text"  id="email"  name="email">
+                <label for="message">Message:</label>
+                <textarea name="messaage" id="message" cols="30" rows="10"></textarea>
+                <input id='submit-button' class="submit-btn" type="submit" value="Send Message">
+            </form>
+        </div>
          
          <div id="social-links"> 
             <a href="#" class="fa fa-facebook"></a>
@@ -60,5 +74,7 @@
         </div>
     </main>
     </div>
+    <script src="index.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
 </body>
 </html>
