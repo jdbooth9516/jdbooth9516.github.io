@@ -77,7 +77,7 @@ function sendMail(e) {
         Subject : "Contact Request",
         Body : `${userMessage.value}`,
     }).then(
-      message => alert(message)
+      message => alert('Thank you for your request. We will review it and get back to you as soon as possible.')
     );
 
     userName.value = '';
