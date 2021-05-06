@@ -1,8 +1,8 @@
 
 let currentProject = 1
-let projectTitles = ["Efficiency Timer", "Future Project"]
-let projectDescriptions = ["Allows user to enter a time to focus on working. Then when the time is up alerts them to take a break that is porportional to the time that they were working.", "Coming Soon"]
-let projectLink = ["https://github.com/jdbooth9516/Efficiency_Timer", "#"]
+let projectTitles = ["Efficiency Timer", "Space-Shooter","Future Project"]
+let projectDescriptions = ["Allows user to enter a time to focus on working. Then when the time is up alerts them to take a break that is porportional to the time that they were working.", "Space Invader/ Galiga inspired game using python and pygame.", " Coming Soon"]
+let projectLink = ["https://github.com/jdbooth9516/Efficiency_Timer", "https://github.com/jdbooth9516/Space_Shooter", "#"]
 
 document.getElementById('left-arrow').addEventListener('click', previousFade);
 
