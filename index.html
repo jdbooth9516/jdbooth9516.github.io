@@ -5,22 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Booth.Dev</title>
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link id='style' rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
     <header>    
         <nav class='navigation'>
+            <div class='mode-container'> 
+                <div class="mode-line">
+                <label for="switch" class="toggle" value="light" >light</label>
+                <input type="radio" id="switch" class="checkbox" name="mode" checked="true" onclick="getMode('light')">
+                </div>
+                <div class="mode-line">
+                <label for="switch" class="toggle" value="dark">Dark</label>
+                <input type="radio" id="switch" class="checkbox" name="mode" onclick="getMode('dark')">
+                </div>
+            </div>  
             <div id="logo">
                 <img src="images/logo.png" alt="jbdev-logo ">
             </div>
             <div id='nav-links'>
                 <ul>
-                    <li><a href="#welcome">Home</a></li>
-                    <li><a href="#project-section">Projects</a></li>
-                    <li><a href="#about-me">About</a></li>
-                    <li><a href="#contact-info">Contact</a></li>
+                    <li><a class="neon" href="#welcome">Home</a></li>
+                    <li><a class="neon" href="#project-section">Projects</a></li>
+                    <li><a class="neon" href="#about-me">About</a></li>
+                    <li><a class="neon" href="#contact-info">Contact</a></li>
                 </ul>
             </div>
         </nav>
@@ -34,7 +44,7 @@
         <div id="project-section">
             <div class="fa fa-chevron-left fa-3x" id="left-arrow"><a class="prev"></a></div>
             <div class="project" id="pro1">
-                <a href="https://github.com/jdbooth9516/Efficiency_Timer" target="_blank"  id="project-title">Efficiency Timer</a>
+                <a class="neon" href="https://github.com/jdbooth9516/Efficiency_Timer" target="_blank"  id="project-title">Efficiency Timer</a>
                 <p class="project-disc" id="project-text">Allows user to enter a time that to focus on working. Then when the time is up alerts them to take a break that is porportional to time time that they were working. </p>
             </div>
             <div class="fa fa-chevron-right fa-3x" id='right-arrow'><a class="next"></a></div>
@@ -68,7 +78,7 @@
          
          <div id="social-links"> 
             <a href="#" class="fa fa-facebook"></a>
-            <a href="#" class="fa fa-linkedin"></a>
+            <a href="https://www.linkedin.com/in/jeremiahbooth?trk=profile-badge" class="fa fa-linkedin"></a>
             <a href="#" class="fa fa-instagram"></a>
          </div>
         </div>

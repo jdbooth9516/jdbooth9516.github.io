@@ -1,3 +1,7 @@
+:root { 
+    --neon:  #c71fb9;
+}
+
 * { 
     margin: 0; 
     padding: 0;
@@ -7,6 +11,12 @@
 html { 
     scroll-behavior: smooth;
 }
+
+body{
+    background-color: rgb(20, 19, 31);
+    width: 99vw;
+    margin: 2px;
+ }
 /* header and navbar */
 
 
@@ -14,7 +24,7 @@ nav {
     display: flex;
     flex-direction: row;
     position: fixed;
-    background-color: aliceblue;
+    background-color: rgb(20, 19, 31);
     top: 0; 
     left: 0;
     margin-bottom: 1vh;
@@ -71,7 +81,7 @@ a {
 
 #logo { 
     line-height: 8vh;
-    margin-left: 2vw;
+    margin-left: 10vw;
 }
 
 .mode-container {
@@ -83,6 +93,10 @@ a {
     margin: 9px  20px;
 }
 
+.toggle { 
+    font-size: 1.5em;
+    color: aliceblue;
+}
 
 
 /* main body */
@@ -129,7 +143,7 @@ main {
 /* PROJECT SECTION */
 
 #project-section { 
-    background: linear-gradient(160deg, lightblue, rgb(1, 106, 243));
+    background: linear-gradient(100deg,  rgb(16, 15, 29), rgb(0, 61, 139));
     margin-top: 5px;
     display: flex;
     flex-direction: row;
@@ -155,9 +169,23 @@ main {
 
 .fa-chevron-left {
     padding-right: 15px;
-    color: aliceblue;
+
     margin-top: 22vh;
     height: 10vh;
+    color: var(--neon);
+    text-shadow: 
+        0 0 0.125em rgba(240, 248, 255, 0.233),
+        0 0 0.5em var(--neon);
+    
+}
+
+.fa-chevron-left:hover  {
+
+    text-shadow: 
+        0 0 0.4em rgba(240, 248, 255, 0.233),
+        0 0 0.9em  #c71fb9;
+    transform: scale(1.2);
+    
 }
 
 @media (max-width: 800px) {
@@ -168,9 +196,21 @@ main {
 
 .fa-chevron-right { 
     padding-left: 15px;
-    color: aliceblue;
     margin-top: 22vh;
     height: 10vh;
+    color: var(--neon);
+    text-shadow: 
+        0 0 0.125em rgba(240, 248, 255, 0.233),
+        0 0 0.5em var(--neon);
+    
+}
+
+.fa-chevron-right:hover { 
+    text-shadow: 
+        0 0 0.4em rgba(240, 248, 255, 0.233),
+        0 0 0.9em  #c71fb9;
+    transform: scale(1.2);
+    
 }
 
 @media (max-width: 800px) {
@@ -183,13 +223,14 @@ main {
 
 
 .project { 
-    background-color: aliceblue;
+    background-color: rgb(20, 19, 31);
     display: flex;
+    border: var(--neon) 0.125em solid;
     flex-direction: column;
     min-height: 25vh;
     min-width: 30vw;
     border-radius: 10px;
-    box-shadow: rgb(39, 39, 39) 4px 4px 4px;
+    box-shadow: var(--neon) 0 0 2em 0;
     max-width: 50vw;
     text-align: center;
     justify-content: center;
@@ -222,10 +263,18 @@ main {
     padding: 3vh 2vw;
 }   
 
+.project > a:hover  {
+    text-shadow: 
+        0 0 0.4em rgba(240, 248, 255, 0.342),
+        0 0 0.9em  #c71fb9;
+    transform: scale(1.2);
+}
+
 .project > p {
     font-size: 1.2em;
     font-weight: 400;
     padding: 5vh 2vw;
+    color: aliceblue;
 
 }   
 @media (min-width: 800px) { 
@@ -236,7 +285,7 @@ main {
 
 
 #decoration { 
-    background: linear-gradient(150deg, rgb(84, 158, 255) ,rgb(16, 103, 218));
+    background: linear-gradient(110deg,  rgb(20, 19, 31) ,rgb(0, 51, 117));
     min-height: 30vh;
     transform: skewY(-7deg);
     margin-top: -14vh;
@@ -280,11 +329,13 @@ main {
 }
 
 #about-text > h3 { 
+    color: aliceblue;
     font-size: 1.5em;
     margin-bottom: 1em;
 }
 
 #about-para { 
+    color: aliceblue;
     font-size: 1.2em;
     line-height: 1.4em;
 }
@@ -294,7 +345,7 @@ main {
     margin-left: 45px;
     object-fit: cover;
     border-radius: 3px;
-    box-shadow: rgb(39, 39, 39) 6px 6px 6px;
+    box-shadow: var(--neon) 0 0 1.5em 0;
 }
 
 @media (max-width: 800px) {
@@ -306,7 +357,7 @@ main {
 /* CONTACT SECTION */
 
 #contact { 
-    background: linear-gradient(160deg, lightblue, rgb(1, 106, 243));
+    background: rgb(20, 19, 31);
     display: flex;
     flex-direction: row;
     min-height: 10vh;
@@ -326,7 +377,7 @@ main {
 }
 
 #contact-info{
-    color:rgb(0, 0, 0);
+    color:aliceblue;
     margin-left: 30px;
     margin-top: 1.5rem;
 
@@ -340,9 +391,11 @@ main {
 #social-links { 
     display: flex;
     justify-content: space-between;
+    padding-right: 20px;
     margin: 30px;
-    max-height: 5vh;
+    
 }
+
 
 
 .contact-form{
@@ -352,9 +405,34 @@ main {
     margin: 5px;
 }
 
+#contact-btn { 
+    font-size: 1.5em;
+    cursor: pointer;
+    background-color:  rgb(20, 19, 31);
+    color: var(--neon);
+    padding: 0.15em 0.70em;
+    
+    border-radius: 0.25em;
+    border: var(--neon) 0.15em solid;
+    text-shadow: 
+        0 0 0.4em rgba(240, 248, 255, 0.233),
+        0 0 0.9em  #c71fb9;
+
+    box-shadow: var(--neon) 0 0 0.8em 0;
+}
+
+#contact-btn:hover { 
+    text-shadow: 
+        0 0 0.4em rgba(240, 248, 255, 0.342),
+        0 0 0.9em  #c71fb9;
+    transform: scale(1.1);
+}
+
+
 
 .form {
     display: flex;
+    color: aliceblue;
     flex-direction: column;
     justify-content: flex-start;
     margin: 5px;
@@ -371,6 +449,19 @@ label {
 
 .submit-btn {
     margin: 10px 0 10px 0;
+    font-size: 1.5em;
+    cursor: pointer;
+    background-color:  rgb(20, 19, 31);
+    color: var(--neon);
+    padding: 0.15em 0.70em;
+    
+    border-radius: 0.25em;
+    border: var(--neon) 0.15em solid;
+    text-shadow: 
+        0 0 0.4em rgba(240, 248, 255, 0.233),
+        0 0 0.9em  #c71fb9;
+
+    box-shadow: var(--neon) 0 0 0.8em 0;
 }
 
 
@@ -383,6 +474,7 @@ label {
     max-height: 20px;
     text-decoration: none;
     border-radius: 50%;
+    box-shadow: var(--neon) 0 0 1em 0;
 }
 
 .fa-facebook:hover  {
@@ -399,6 +491,7 @@ label {
     text-align: center;
     text-decoration: none;
     border-radius: 10px;
+    box-shadow: var(--neon) 0 0 1em 0;
 }
 
 .fa-linkedin:hover  {
@@ -413,8 +506,16 @@ label {
     max-height: 20px;
     text-decoration: none;
     border-radius: 10px;
+    box-shadow: var(--neon) 0 0 1em 0;
 }
 
 .fa-instagram:hover  {
     transform: scale(1.07);
+}
+
+.neon  {
+    color: var(--neon);
+    text-shadow: 
+        0 0 0.125em rgba(240, 248, 255, 0.233),
+        0 0 0.5em var(--neon);
 }

@@ -10,6 +10,16 @@ document.getElementById('right-arrow').addEventListener('click', nextFade);
 document.getElementById('contact-btn').addEventListener('click', openForm);
 document.getElementById('submit-button').addEventListener('click', sendMail);
 
+function getMode (mode)  { 
+    if (mode === 'light') { 
+        document.getElementById('style').href = "style.css"
+    }
+    else if (mode === 'dark') {
+        document.getElementById('style').href = 'darkStyle.css'
+    }
+
+}
+
 function previousFade() {
     document.getElementById('pro1').classList.remove('unfade');
     document.getElementById('pro1').classList.add('fade');
