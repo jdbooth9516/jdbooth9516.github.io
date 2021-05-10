@@ -61,8 +61,10 @@ li{
 }
 
 li:hover { 
-    transform: scale(1.1);
-
+    text-shadow: 
+        0 0 0.4em rgba(240, 248, 255, 0.466),
+        0 0 1.1em  #c71fb9;
+    transform: scale(1.2);
 }
 
 a {
@@ -80,7 +82,8 @@ a {
 }
 
 #logo { 
-    line-height: 8vh;
+    background-color: aliceblue;
+    line-height: 7vh;
     margin-left: 10vw;
 }
 
