@@ -1,91 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Booth.Dev</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link id='style' rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link id="style" rel="stylesheet" href="darkStyle.css" />
+  </head>
+  <body>
     <div class="container">
-    <header>    
-        <nav class='navigation'>
-            <div class='mode-container'> 
-                <div class="mode-line">
-                <label for="switch" class="toggle" value="light" >light</label>
-                <input type="radio" id="switch" class="checkbox" name="mode" checked="true" onclick="getMode('light')">
-                </div>
-                <div class="mode-line">
-                <label for="switch" class="toggle" value="dark">Dark</label>
-                <input type="radio" id="switch" class="checkbox" name="mode" onclick="getMode('dark')">
-                </div>
-            </div>  
-            <div id="logo">
-                <img src="images/logo.png" alt="jbdev-logo ">
+      <header>
+        <nav class="navigation">
+          <div class="mode-container">
+            <div class="mode-line">
+              <label for="switch" class="toggle" value="light">light</label>
+              <input
+                type="radio"
+                id="switch"
+                class="checkbox"
+                name="mode"
+                onclick="getMode('light')"
+              />
             </div>
-            <div id='nav-links'>
-                <ul>
-                    <li><a class="neon" href="#welcome">Home</a></li>
-                    <li><a class="neon" href="#project-section">Projects</a></li>
-                    <li><a class="neon" href="#about-me">About</a></li>
-                    <li><a class="neon" href="#contact-info">Contact</a></li>
-                </ul>
+            <div class="mode-line">
+              <label for="switch" class="toggle" value="dark">Dark</label>
+              <input
+                type="radio"
+                id="switch"
+                class="checkbox"
+                name="mode"
+                checked="true"
+                onclick="getMode('dark')"
+              />
             </div>
+          </div>
+          <div id="logo">
+            <img src="images/logo.png" alt="jbdev-logo " />
+          </div>
+          <div id="nav-links">
+            <ul>
+              <li><a class="neon" href="#welcome">Home</a></li>
+              <li><a class="neon" href="#project-section">Projects</a></li>
+              <li><a class="neon" href="#about-me">About</a></li>
+              <li><a class="neon" href="#contact-info">Contact</a></li>
+            </ul>
+          </div>
         </nav>
-    </header>
-    <main>
+      </header>
+      <main>
         <div id="welcome">
-            <h1 id="welcome-title">Welcome, I'm Jeremiah.</h1>
-            <p id="welcome-text"> I am an all around web-developer. That specializes in clean and simple design and function. Let's see what we can create together.
-            </p>
+          <h1 id="welcome-title">Welcome, I'm Jeremiah.</h1>
+          <p id="welcome-text">
+            I am an all around web-developer. That specializes in clean and
+            simple design and function. Let's see what we can create together.
+          </p>
         </div>
         <div id="project-section">
-            <div class="fa fa-chevron-left fa-3x" id="left-arrow"><a class="prev"></a></div>
-            <div class="project" id="pro1">
-                <a class="neon" href="https://github.com/jdbooth9516/Efficiency_Timer" target="_blank"  id="project-title">Efficiency Timer</a>
-                <p class="project-disc" id="project-text">Allows user to enter a time that to focus on working. Then when the time is up alerts them to take a break that is porportional to time time that they were working. </p>
-            </div>
-            <div class="fa fa-chevron-right fa-3x" id='right-arrow'><a class="next"></a></div>
+          <div class="fa fa-chevron-left fa-3x" id="left-arrow">
+            <a class="prev"></a>
+          </div>
+          <div class="project" id="pro1">
+            <a
+              class="neon"
+              href="https://github.com/jdbooth9516/YouTube_Clone"
+              target="_blank"
+              id="project-title"
+              >YouClone</a
+            >
+            <p class="project-disc" id="project-text">
+              Who doesn't love YouTube? Who doesn't wish they had made Youtube.
+              This was a group project for school to make a youtube clone how we
+              would like it too look.
+            </p>
+          </div>
+          <div class="fa fa-chevron-right fa-3x" id="right-arrow">
+            <a class="next"></a>
+          </div>
         </div>
         <div id="decoration"></div>
         <div id="about-me">
-            <div id="about-text">
-                <h3>Nice to meet you,</h3>
-                <p id="about-para"> &emsp; I am Jeremiah a U.S Army veteran now turned software developer. A passion that encompasses two of my favorite things, technology and building things. I started this journey teaching myself Python and as time progressed, I got more into web development and that required I learn HTML, CSS, and Javascript. I then went to school to sharpen my skills and solidify my learning. As such I bring to the table hard work and dedication as well as the constant desire and passion for learning new skills and technologies.</p> </div>
-            <img  id="about-img" src="images/12193723_10200799604989997_658857533072314377_n.jpg" alt="image of Jeremiah"> 
+          <div id="about-text">
+            <h3>Nice to meet you,</h3>
+            <p id="about-para">
+              &emsp; I am Jeremiah a U.S Army veteran now turned software
+              developer. A passion that encompasses two of my favorite things,
+              technology and building things. I started this journey teaching
+              myself Python and as time progressed, I got more into web
+              development and that required I learn HTML, CSS, and Javascript. I
+              then went to school to sharpen my skills and solidify my learning.
+              As such I bring to the table hard work and dedication as well as
+              the constant desire and passion for learning new skills and
+              technologies.
+            </p>
+          </div>
+          <img
+            id="about-img"
+            src="images/12193723_10200799604989997_658857533072314377_n.jpg"
+            alt="image of Jeremiah"
+          />
         </div>
         <div id="contact">
-            <div id="contact-info">
-            <p> Email: jboothwebdev@gmail.com</p> 
+          <div id="contact-info">
+            <p>Email: jboothwebdev@gmail.com</p>
             <div class="contact-btn-section">
-                <button id="contact-btn" type="button">Contact Me</button>
+              <button id="contact-btn" type="button">Contact Me</button>
             </div>
-        </div>
+          </div>
 
-        <div class="contact-form" id="contact-form">
+          <div class="contact-form" id="contact-form">
             <form action="#" class="form">
-                <label for="name">Name:</label>
-                <input  class="input-area" type="text" id="name" name="name">
-                <label for="email">Email:</label>
-                <input class="input-area" type="text"  id="email"  name="email">
-                <label for="message">Message:</label>
-                <textarea name="messaage" id="message" cols="30" rows="10"></textarea>
-                <input id='submit-button' class="submit-btn" type="submit" value="Send Message">
+              <label for="name">Name:</label>
+              <input class="input-area" type="text" id="name" name="name" />
+              <label for="email">Email:</label>
+              <input class="input-area" type="text" id="email" name="email" />
+              <label for="message">Message:</label>
+              <textarea
+                name="messaage"
+                id="message"
+                cols="30"
+                rows="10"
+              ></textarea>
+              <input
+                id="submit-button"
+                class="submit-btn"
+                type="submit"
+                value="Send Message"
+              />
             </form>
-        </div>
-         
-         <div id="social-links"> 
+          </div>
+
+          <div id="social-links">
             <a href="#" class="fa fa-facebook"></a>
-            <a href="https://www.linkedin.com/in/jeremiahbooth?trk=profile-badge" class="fa fa-linkedin"></a>
+            <a
+              href="https://www.linkedin.com/in/jeremiahbooth?trk=profile-badge"
+              class="fa fa-linkedin"
+            ></a>
             <a href="#" class="fa fa-instagram"></a>
-         </div>
+          </div>
         </div>
-    </main>
+      </main>
     </div>
-    <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
+    <script
+      src="https://platform.linkedin.com/badges/js/profile.js"
+      async
+      defer
+      type="text/javascript"
+    ></script>
     <script src="index.js"></script>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
-</body>
+  </body>
 </html>
