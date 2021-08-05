@@ -1,13 +1,15 @@
 let currentProject = -1;
-let projectTitles = ["YouClone", "Music Library", "Full GitHub "];
+let projectTitles = ["Capstone Ecommerce", "YouClone", "Full GitHub"];
 let projectDescriptions = [
+  "10 day sprint to create a themed ecommerces site with a customer side, that contains information and product ordering. As well as an employee side that show order and data analytics.",
+
   "Who doesn't love YouTube? Who doesn't wish they had made Youtube. This was a group project for school to make a youtube clone how we would like it too look.",
-  "Playing with API's to make a library of Songs.",
+  
   " Take a look includes everything from the self-taught days to class projects.",
 ];
 let projectLink = [
+  "https://github.com/jdbooth9516/CustomKeyboard",
   "https://github.com/jdbooth9516/YouTube_Clone",
-  "https://github.com/jdbooth9516/Music_library",
   "https://github.com/jdbooth9516",
 ];
 
